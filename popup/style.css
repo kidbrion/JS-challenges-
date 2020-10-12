@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+button {
+    color: black;
+    background-color: lime;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#container{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#container.active{
+    display: flex;
+}
+
+#container-popup{
+    background-color: lime;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    width: 200px;
+
+}
+
+#container-popup button{
+    background-color:rgba(0, 0, 0, 0);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
